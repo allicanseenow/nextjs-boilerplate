@@ -2,9 +2,13 @@ import { FC, useEffect } from 'react';
 import Head from 'next/head';
 import { CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
+import { Provider as ReduxProvider } from 'react-redux';
 
 import '../styles/global.css';
 import theme from '../styles/theme';
+import { configureStore } from '../redux/configureStore';
+
+const store = configureStore();
 
 const MyApp: FC<any> = ({ Component, pageProps }) => {
   useEffect(() => {
@@ -23,7 +27,9 @@ const MyApp: FC<any> = ({ Component, pageProps }) => {
       </Head>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Component {...pageProps} />
+        <ReduxProvider store={store}>
+          <Component {...pageProps} />
+        </ReduxProvider>
       </ThemeProvider>
     </>
   );

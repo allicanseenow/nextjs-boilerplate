@@ -1,15 +1,11 @@
 import React from 'react';
 import { NextPage } from 'next';
-import { Button } from '@material-ui/core';
+import { Sample } from '../features/components/Sample';
 
 const Home: NextPage<any> = ({ userAgent }) => {
+
   return (
-    <>
-      <h1>Hello world! - user agent: {userAgent}</h1>
-      <Button variant="contained" color="primary">
-        Material UI button
-      </Button>
-    </>
+    <Sample userAgent={userAgent} />
   );
 };
 
