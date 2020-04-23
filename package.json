@@ -1,8 +1,8 @@
 {
-  "name": "Trung-resume",
+  "name": "nextjs-boilerplate",
   "version": "1.0.0",
-  "description": "Quang Trung Dang's resume",
-  "repository": "https://github.com/allicanseenow/my-resume.git",
+  "description": "Next.js boilerplate",
+  "repository": "https://github.com/allicanseenow/nextjs-boilerplate.git",
   "author": "Quang Trung Dang",
   "license": "MIT",
   "scripts": {
