@@ -1,6 +1,6 @@
-# Next.js Boilerplate
+# Next.js - Material UI Boilerplate 
 
-Personal boilerplate that uses Nex.js
+Personal boilerplate that uses Nex.js. This branch has Material-UI integrated.
 
 ### Prerequisites
 
