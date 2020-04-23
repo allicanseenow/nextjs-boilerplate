@@ -11,10 +11,9 @@ const Home: NextPage<any> = ({ userAgent }) => {
       </Button>
     </>
   );
-}
+};
 
 Home.getInitialProps = async ({ req }) => {
-  const b = 10;
   const userAgent = req ? req.headers['user-agent'] : navigator.userAgent;
   return { userAgent };
 };
